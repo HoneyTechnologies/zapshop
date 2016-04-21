@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Listings Page</title>
+<!-- Custom CSS -->
+    <link href="css/zap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+ <link href="fonts/Lato-Regular/Lato-Regular.css" rel="stylesheet">
+    <link href="fonts/Lato-Bold/Lato-Bold.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ 
+ 
+ </head>
+<body>
+<!--------Nav header-------->
+<nav class="navbar navbar-default1 style="margin:0px 0px 0px 0px !important;">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header ">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-responsive"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <div class="row">
+                        <div class="col-sm-6 col-sm-offset-1 search">
+                            <div id="imaginary_container">
+                                <div class="input-group stylish-input-group">
+                                    <input type="text" id="search" class="form-control" placeholder="search your product....">
+
+                                    <span class="input-group-addon">
+                                        <a>Search</a>   <span class="fa fa-search"> </span></button>
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+        
+      <ul class="nav navbar-nav navbar-right" style="margin-top:5px;">
+       
+        <li class="dropdown" style="margin-top:12px;">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#ffffff;"><img src="images/user.png" hspace="10px">Kiran..<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    </div><!-- /.navbar-collapse -->
+	
+	<div class="bread">
+	<ul class = "breadcrumb">
+   <li><a href = "#">Home</a></li>
+   <li><a href = "#">Mobiles & Accessories</a></li>
+   <li class ="active">Iphone</li>
+   
+   <li class="pull-right1">Showing 100 Products in Mobiles</li>
+   
+</ul>
+</div>
+ 
+</nav>
+<!------nav ends--------->
+<div class="container-fluid">
+<!------------------------------------------------------->
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+  <div class="auto" id="sortby">
+<div class="box-border text-center" style="margin-top:10px;"><h4><b>Refine By</b></h4></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div class="row">
+<div class="auto" id="sortby">
+  <div class="row">
+  <div class="col-md-2">
+  <h4 id="sortbytext" style="padding-left:20px !important;">Sort By</h4>
+  </div>
+  <div class="col-md-10">
+ <ul class="new-list_1">
+<li><a href='#'>Relevance</a>
+	
+</li>
+<li><a href='#'>Popular</a>
+	
+</li>
+<li><a href='#'>High Price</a>
+	
+</li>
+<li><a href='#'>Low Price</a>
+	
+</li>
+<li><a href='#'>New</a>
+	
+</li>
+</ul>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="auto" id="sortby">
+<div class="box-border text-center" style="margin-top:10px;"><h4><b>Compare</b></h4></div>
+</div>
+</div>
+</div>
+</div>
+<!--------------------------------------------------------->
+<div style="margin-top:30px;"></div>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <p class="pull-left1">BRAND</p><p class="pull-right1">-</p>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+	 <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Iphone</label>
+					  </div>
+					  
+                     <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Samsung</label>
+					  </div>
+		                  
+		             <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Microsoft Lumia</label>
+					  </div>
+	                        
+	               <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Lenovo</label>
+					  </div>
+		                        
+		             <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Htc</label>
+					  </div>
+		                        
+					<div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Sony</label>
+					  </div>
+		                        
+		            <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Asus</label>
+					  </div>
+		                    
+				 <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">One plus</label>
+					  </div>
+		</div>
+    </div>
+  </div>
+
+          <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <p class="pull-left1">PRICE</p><p class="pull-right1">+</p>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+	  <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Iphone</label>
+					  </div>
+					  
+                     <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Samsung</label>
+					  </div>
+		                  
+		             <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Microsoft Lumia</label>
+					  </div>
+	                        
+	               <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Lenovo</label>
+					  </div>
+	</div>	
+	 </div>
+  </div>
+              <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          <p class="pull-left2">RAM</p><p class="pull-right1">+</p>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+	  <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Iphone</label>
+					  </div>
+					  
+                     <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Samsung</label>
+					  </div>
+		                  
+		             <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Microsoft Lumia</label>
+					  </div>
+	                        
+	               <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Lenovo</label>
+					  </div>
+	</div>	
+	 </div>
+  </div>
+               <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+          <p class="pull-left3">OS</p><p class="pull-right1">+</p>
+        </a>
+      </h4>
+    </div>
+    <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
+      <div class="panel-body">
+	  <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Iphone</label>
+					  </div>
+					  
+                     <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Samsung</label>
+					  </div>
+		                  
+		             <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Microsoft Lumia</label>
+					  </div>
+	                        
+	               <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Lenovo</label>
+					  </div>
+	</div>	
+	 </div>
+  </div>
+             <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+          <p class="pull-left4">RESOLUTION TYPE</p><p class="pull-right1">+</p>
+        </a>
+      </h4>
+    </div>
+    <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfive">
+      <div class="panel-body">
+	 <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Iphone</label>
+					  </div>
+					  
+                     <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Samsung</label>
+					  </div>
+		                  
+		             <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Microsoft Lumia</label>
+					  </div>
+	                        
+	               <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Lenovo</label>
+					  </div>
+	</div>	
+	 </div>
+	 </div>
+	           <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
+          <p class="pull-left2">ROM</p><p class="pull-right1">+</p>
+        </a>
+      </h4>
+    </div>
+    <div id="collapsesix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsix">
+      <div class="panel-body">
+	  <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Iphone</label>
+					  </div>
+					  
+                     <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Samsung</label>
+					  </div>
+		                  
+		             <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Microsoft Lumia</label>
+					  </div>
+	                        
+	               <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Lenovo</label>
+					  </div>
+	</div>	
+	 </div>
+	 </div>
+	             <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseseven" aria-expanded="true" aria-controls="collapseseven">
+          <p class="pull-left5">SCREEN SIZE</p><p class="pull-right1" style="margin-top:-30px;">+</p>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseseven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingseven">
+      <div class="panel-body">
+	  <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Iphone</label>
+					  </div>
+					  
+                     <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Samsung</label>
+					  </div>
+		                  
+		             <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Microsoft Lumia</label>
+					  </div>
+	                        
+	               <div class="checkbox1">
+					  <label><input type="checkbox" style="margin-right:30px;" value="">Lenovo</label>
+					  </div>
+	</div>	
+	 </div>
+  </div>
+  	
+  </div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+	<div class="row">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		
+
+			
+			
+				<div class="col-md-12 box" id="boxspace">
+				<div class="checkbox">
+					  <label><input type="checkbox" value="">compare</label>
+					  </div>
+					  <div class="row">
+					  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="images/image0.png" class="img-responsive" alt="Responsive image" class="thumbnail">
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8">
+					<div class="row">
+					<h4 id="content text-left" style="line-height:30px;">Apple 5S(Gold 16, Gb)
+					Rs.23,500 <img id="flipkartimg" src="images/flipkart.png" alt="mobile"></h4>
+					</div>
+					<div class="row">
+					<fieldset class="rating">
+					
+                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+					</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h5 id="content1">1Gb Ram  |  16Gb Rom  |  Metal body  |  Ios 8 </h5>
+					 <h5 id="contentt">   Finger Print Sensor | 5.1 Inch Screen</h5>
+					 </div>
+					  </div>
+					<hr class="hr1">
+					<div class="row">
+			 <div class="auto">
+                    
+                    <ul class="cont2">
+                        <li><a href="#"><img src="images/shopclue.png" hspace="5px" width="20px" height="20px">Rs. 10,999</a></li>
+                        <li><a href="#"><img src="images/apple.png" hspace="5px" width="20px" height="20px">Rs. 11,000</a></li>
+                        <li><a href="#"><img src="images/amazon.png" hspace="5px" width="20px" height="20px">Rs. 11,000</a></li>
+                    </ul>
+                    
+                    <div style="margin-bottom:10px;"></div>	
+                    </div>
+			 <div class="row">
+		<div id="endcolor"></div>
+		</div>
+		</div>
+				</div>
+				</div>
+		
+		
+		<!------------------->
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		
+
+			
+			
+				<div class="col-md-12 box" id="boxspace">
+				<div class="checkbox">
+					  <label><input type="checkbox" value="">compare</label>
+					  </div>
+					  <div class="row">
+					  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="images/image0.png" class="img-responsive" alt="Responsive image" class="thumbnail">
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8">
+					<div class="row">
+					<h4 id="content text-left" style="line-height:30px;">Apple 5S(Gold 16, Gb)
+					Rs.23,500 <img id="flipkartimg" src="images/flipkart.png" alt="mobile"></h4>
+					</div>
+					<div class="row">
+					<fieldset class="rating">
+					
+                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+					</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h5 id="content1">1Gb Ram  |  16Gb Rom  |  Metal body  |  Ios 8 </h5>
+					 <h5 id="contentt">   Finger Print Sensor | 5.1 Inch Screen</h5>
+					 </div>
+					  </div>
+					<hr class="hr1">
+					<div class="row">
+			 <div class="auto">
+                    
+                    <ul class="cont2">
+                        <li><a href="#"><img src="images/shopclue.png" hspace="5px" width="20px" height="20px">Rs. 10,999</a></li>
+                        <li><a href="#"><img src="images/apple.png" hspace="5px" width="20px" height="20px">Rs. 11,000</a></li>
+                        <li><a href="#"><img src="images/amazon.png" hspace="5px" width="20px" height="20px">Rs. 11,000</a></li>
+                    </ul>
+                    
+                    <div style="margin-bottom:10px;"></div>	
+                    </div>
+			 <div class="row">
+		<div id="endcolor"></div>
+		</div>
+		</div>
+				
+				</div>
+		</DIV>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		
+
+			
+			
+				<div class="col-md-12 box" id="boxspace">
+				<div class="checkbox">
+					  <label><input type="checkbox" value="">compare</label>
+					  </div>
+					  <div class="row">
+					  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="images/image0.png" class="img-responsive" alt="Responsive image" class="thumbnail">
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8">
+					<div class="row">
+					<h4 id="content text-left" style="line-height:30px;">Apple 5S(Gold 16, Gb)
+					Rs.23,500 <img id="flipkartimg" src="images/flipkart.png" alt="mobile"></h4>
+					</div>
+					<div class="row">
+					<fieldset class="rating">
+					
+                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+					</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h5 id="content1">1Gb Ram  |  16Gb Rom  |  Metal body  |  Ios 8 </h5>
+					 <h5 id="contentt">   Finger Print Sensor | 5.1 Inch Screen</h5>
+					 </div>
+					  </div>
+					<hr class="hr1">
+					<div class="row">
+			 <div class="auto">
+                    
+                    <ul class="cont2">
+                        <li><a href="#"><img src="images/shopclue.png" hspace="5px" width="20px" height="20px">Rs. 10,999</a></li>
+                        <li><a href="#"><img src="images/apple.png" hspace="5px" width="20px" height="20px">Rs. 11,000</a></li>
+                        <li><a href="#"><img src="images/amazon.png" hspace="5px" width="20px" height="20px">Rs. 11,000</a></li>
+                    </ul>
+                    
+                    <div style="margin-bottom:10px;"></div>	
+                    </div>
+			 <div class="row">
+		<div id="endcolor"></div>
+		</div>
+		</div>
+				
+				</div>
+		</DIV>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		
+
+			
+			
+				<div class="col-md-12 box" id="boxspace">
+				<div class="checkbox">
+					  <label><input type="checkbox" value="">compare</label>
+					  </div>
+					  <div class="row">
+					  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="images/image0.png" class="img-responsive" alt="Responsive image" class="thumbnail">
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8">
+					<div class="row">
+					<h4 id="content text-left" style="line-height:30px;">Apple 5S(Gold 16, Gb)
+					Rs.23,500 <img id="flipkartimg" src="images/flipkart.png" alt="mobile"></h4>
+					</div>
+					<div class="row">
+					<fieldset class="rating">
+					
+                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+					</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h5 id="content1">1Gb Ram  |  16Gb Rom  |  Metal body  |  Ios 8 </h5>
+					 <h5 id="contentt">   Finger Print Sensor | 5.1 Inch Screen</h5>
+					 </div>
+					  </div>
+					<hr class="hr1">
+					<div class="row">
+			 <div class="auto">
+                    
+                    <ul class="cont2">
+                        <li><a href="#"><img src="images/shopclue.png" hspace="5px" width="20px" height="20px">Rs. 10,999</a></li>
+                        <li><a href="#"><img src="images/apple.png" hspace="5px" width="20px" height="20px">Rs. 11,000</a></li>
+                        <li><a href="#"><img src="images/amazon.png" hspace="5px" width="20px" height="20px">Rs. 11,000</a></li>
+                    </ul>
+                    
+                    <div style="margin-bottom:10px;"></div>	
+                    </div>
+			 <div class="row">
+		<div id="endcolor"></div>
+		</div>
+		</div>
+				
+				</div>
+		</DIV>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		
+
+			
+			
+				<div class="col-md-12 box" id="boxspace">
+				<div class="checkbox">
+					  <label><input type="checkbox" value="">compare</label>
+					  </div>
+					  <div class="row">
+					  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="images/image0.png" class="img-responsive" alt="Responsive image" class="thumbnail">
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8">
+					<div class="row">
+					<h4 id="content text-left" style="line-height:30px;">Apple 5S(Gold 16, Gb)
+					Rs.23,500 <img id="flipkartimg" src="images/flipkart.png" alt="mobile"></h4>
+					</div>
+					<div class="row">
+					<fieldset class="rating">
+					
+                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+					</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h5 id="content1">1Gb Ram  |  16Gb Rom  |  Metal body  |  Ios 8 </h5>
+					 <h5 id="contentt">   Finger Print Sensor | 5.1 Inch Screen</h5>
+					 </div>
+					  </div>
+					<hr class="hr1">
+					<div class="row">
+			 <div class="auto">
+                    
+                    <ul class="cont2">
+                        <li><a href="#"><img src="images/shopclue.png" hspace="5px" width="20px" height="20px">Rs. 10,999</a></li>
+                        <li><a href="#"><img src="images/apple.png" hspace="5px" width="20px" height="20px">Rs. 11,000</a></li>
+                        <li><a href="#"><img src="images/amazon.png" hspace="5px" width="20px" height="20px">Rs. 11,000</a></li>
+                    </ul>
+                    
+                    <div style="margin-bottom:10px;"></div>	
+                    </div>
+			 <div class="row">
+		<div id="endcolor"></div>
+		</div>
+		</div>
+				
+				</div>
+		</DIV>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		
+
+			
+			
+				<div class="col-md-12 box" id="boxspace">
+				<div class="checkbox">
+					  <label><input type="checkbox" value="">compare</label>
+					  </div>
+					  <div class="row">
+					  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img src="images/image0.png" class="img-responsive" alt="Responsive image" class="thumbnail">
+					</div>
+					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-8">
+					<div class="row">
+					<h4 id="content text-left" style="line-height:30px;">Apple 5S(Gold 16, Gb)
+					Rs.23,500 <img id="flipkartimg" src="images/flipkart.png" alt="mobile"></h4>
+					</div>
+					<div class="row">
+					<fieldset class="rating">
+					
+                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+					</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h5 id="content1">1Gb Ram  |  16Gb Rom  |  Metal body  |  Ios 8 </h5>
+					 <h5 id="contentt">   Finger Print Sensor | 5.1 Inch Screen</h5>
+					 </div>
+					  </div>
+					<hr class="hr1">
+					<div class="row">
+			 <div class="auto">
+                    
+                    <ul class="cont2">
+                        <li><a href="#"><img src="images/shopclue.png" hspace="5px" width="20px" height="20px">Rs. 10,999</a></li>
+                        <li><a href="#"><img src="images/apple.png" hspace="5px" width="20px" height="20px">Rs. 11,000</a></li>
+                        <li><a href="#"><img src="images/amazon.png" hspace="5px" width="20px" height="20px">Rs. 11,000</a></li>
+                    </ul>
+                    
+                    <div style="margin-bottom:10px;"></div>	
+                    </div>
+			 <div class="row">
+		<div id="endcolor"></div>
+		</div>
+		</div>
+				
+				</div>
+		</DIV>
+	</div>
+	</div>
+	<div class="row">
+	<button id="button1">See more</button>
+	</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="auto box-shadow" style="padding:30px 0px;">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img src="images/image0.png" class="img-responsive" alt="Responsive image" class="thumbnail"></div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+
+	<div class="row">
+					<h4 id="content text-left" style="line-height:30px;">Apple 5S(Gold 16, Gb)
+					Rs.23,500 <img id="flipkartimg" src="images/flipkart.png" alt="mobile"></h4>
+					</div>
+					<div class="row">
+					<fieldset class="rating">
+					
+                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+					</div>
+					<a href="#"> 
+           <span class="glyphicon glyphicon-trash"></span> 
+         </a>
+</div>
+</div>
+               <div class="auto box-shadow" style="padding:30px 0px;">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img src="images/image0.png" class="img-responsive" alt="Responsive image" class="thumbnail"></div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+
+	<div class="row">
+					<h4 id="content text-left" style="line-height:30px;">Apple 5S(Gold 16, Gb)
+					Rs.23,500 <img id="flipkartimg" src="images/flipkart.png" alt="mobile"></h4>
+					</div>
+					<div class="row">
+					<fieldset class="rating">
+					
+                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+					</div>
+					<a href="#"> 
+           <span class="glyphicon glyphicon-trash"></span> 
+         </a>
+</div>
+</div>
+<div class="auto box-shadow" style="padding:30px 0px;">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><img src="images/image0.png" class="img-responsive" alt="Responsive image" class="thumbnail"></div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+
+	<div class="row">
+					<h4 id="content text-left" style="line-height:30px;">Apple 5S(Gold 16, Gb)
+					Rs.23,500 <img id="flipkartimg" src="images/flipkart.png" alt="mobile"></h4>
+					</div>
+					<div class="row">
+					<fieldset class="rating">
+					
+                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+					</div>
+					<a href="#"> 
+           <span class="glyphicon glyphicon-trash"></span> 
+         </a>
+</div>
+</div>
+					
+					
+			<div class="row">
+	<button id="button1">See more</button>
+	</div>	
+				
+				
+				
+			</div>
+</div>			
+
+
+
+
+	
+	
+	
+			
+<!-------------------->
+       <footer>
+
+
+<div id="footer">
+                
+                    <div class="col-md-3 col-sm-6 ">
+                        <h4 class="text-left">HELP</h4>
+                        <br>
+						<ul class="u-ul">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Report Infringement</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+						
+						</ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                       <h4 class="text-left">COMPANY</h4>
+                        <br>
+						<ul class="u-ul">
+					
+                       <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+						<li><a href="#">Contact us</a></li>
+                       </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4 class="text-left">STAY CONNECTED</h4>
+                        <br>
+                        <ul class="social_new">
+                            <li>
+                                <a href="#"><i class="fa fa-twitter" style="color:#000;"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook" style="color:#000;"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin" style="color:#000;"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                    
+                     <h4 class="text-left">TESTIMONIAL & REVIEWS</h4>
+                        <br>
+                         <ul class="u-ul">
+                            <li>
+                                <div class="row"> <p> <img   src="images/user.png" hspace="10px"  style="height:20px;" />"its is a long established fact reader will be distracted"</p>
+                                </div>
+                            </li>
+                            <li>
+                                 <p class="left">"it is a long established fact"</p>
+                    
+                             </li>
+                             <li>
+                                 <p class="left">"it is a long established fact"</p>
+                             </li>
+                        
+        </ul>
+    </div>
+</div>
+<div class="container" id="footer1">
+
+                <div class="col-md-4 col-md-offset-4">
+                    <span class="copyright text-center">Copyright &copy; Zapshop 2016 . All rights reserved</span>
+                </div>
+
+
+
+            </div>
+</footer>
+
+		
+	</div>
+		
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
